@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Services | Eesar Matharu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">EM</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about-me.html"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="services.html" class="active"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="contact-me.html"><i class="fas fa-envelope"></i> Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- page header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Professional <span class="highlight">Services</span></h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> / <a href="services.html">Services</a> / <span>Professional Services</span>
+                </div>
+            </div>
+            <div class="header-shape"></div>
+        </section>
+
+        <!-- professional services section -->
+        <section class="employ-section">
+            <div class="container">
+                <div class="section-intro">
+                    <div class="section-subtitle">Why Choose Me</div>
+                    <h2>Professional Expertise</h2>
+                </div>
+                
+                <div class="employ-content">
+                    <div class="employ-image">
+                        <div class="image-container">
+                            <img src="images/Cyber.jpg" alt="Description of the image" class="employ-image-img">
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                    <div class="employ-text">
+                        <p class="lead-text">With a solid foundation in computer science and cybersecurity, I bring both technical expertise and hands-on experience with industry-leading tools such as Cisco and Bloomberg. My deep passion for technology drives my commitment to delivering innovative and high-quality solutions that meet the evolving needs of the industry. As a dedicated and results-driven professional, I am eager to contribute my skills and collaborate on impactful projects.</p>
+                        
+                        <div class="expertise-areas">
+                            <div class="expertise-item">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="expertise-details">
+                                    <h3>Cybersecurity</h3>
+                                    <p>Network security, penetration testing, and security analysis.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="expertise-item">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="expertise-details">
+                                    <h3>Software Development</h3>
+                                    <p>Web applications, mobile apps, and custom software solutions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="expertise-item">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="expertise-details">
+                                    <h3>Project Management</h3>
+                                    <p>Efficient planning, execution, and delivery of technical projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tools-section">
+                            <h3>Tools & Technologies</h3>
+                            <div class="tools-grid">
+                                <div class="tool-item">Cisco</div>
+                                <div class="tool-item">Bloomberg</div>
+                                <div class="tool-item">Python</div>
+                                <div class="tool-item">JavaScript</div>
+                                <div class="tool-item">HTML/CSS</div>
+                                <div class="tool-item">React</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-container">
+                    <p>Ready to discuss your project or employment opportunities?</p>
+                    <a href="contact-me.html" class="cta-button primary">Get In Touch</a>
+                    <a href="#" class="cta-button secondary">Download CV</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">EM</div>
+                <p>&copy; 2025 Eesar Matharu. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/hennaxeesar?igsh=bGlqaHNzNTZlZnRq&utm_source=qr" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@hennaxeesar?_t=ZN-8vOqBqZziFy&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/in/eesar-matharu-598b62259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script for theme toggle -->
+    <script>
+        // theme toggle functionality
+        document.querySelector('.theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-moon')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+    </script>
+</body>
+</html>
+

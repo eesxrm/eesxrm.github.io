@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Eesar Matharu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">EM</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about-me.html"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="services.html" class="active"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="contact-me.html"><i class="fas fa-envelope"></i> Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <!-- page header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>My <span class="highlight">Services</span></h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> / <span>Services</span>
+                </div>
+            </div>
+            <div class="header-shape"></div>
+        </section>
+
+        <!-- services section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-intro">
+                    <div class="section-subtitle">What I Offer</div>
+                    <h2>Explore My Services</h2>
+                    <p>I offer a variety of services that showcase my diverse skills and interests. Click on any service to learn more.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Henna Designs</h3>
+                        <p>Beautiful, custom henna designs for special occasions, events, and personal expression.</p>
+                        <a href="henna.html" class="service-link">
+                            Explore Designs <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Professional Services</h3>
+                        <p>Hire me for my technical expertise in cybersecurity, software development, and more.</p>
+                        <a href="employ-me.html" class="service-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Cooking & Baking</h3>
+                        <p>Delicious recipes and cooking tips from my personal collection of favorite dishes.</p>
+                        <a href="cooking-baking-recipes.html" class="service-link">
+                            View Recipes <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="cta-container">
+                    <p>Interested in working together or have questions about my services?</p>
+                    <a href="contact-me.html" class="cta-button primary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">EM</div>
+                <p>&copy; 2025 Eesar Matharu. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/hennaxeesar?igsh=bGlqaHNzNTZlZnRq&utm_source=qr" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@hennaxeesar?_t=ZN-8vOqBqZziFy&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/in/eesar-matharu-598b62259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script for theme toggle -->
+    <script>
+        // theme toggle functionality
+        document.querySelector('.theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-moon')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+    </script>
+</body>
+</html>
+

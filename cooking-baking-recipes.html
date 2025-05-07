@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking & Baking Recipes | Eesar Matharu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">EM</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about-me.html"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="services.html" class="active"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="contact-me.html"><i class="fas fa-envelope"></i> Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- page header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Cooking & <span class="highlight">Baking</span></h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a> / <a href="services.html">Services</a> / <span>Recipes</span>
+                </div>
+            </div>
+            <div class="header-shape"></div>
+        </section>
+
+        <!-- ALL recipes -->
+        <section class="recipes-section">
+            <div class="container">
+                <div class="section-intro">
+                    <div class="section-subtitle">Culinary Creations</div>
+                    <h2>My Favorite Recipes</h2>
+                    <p>Here are some of my favorite cooking and baking recipes that I'd love to share with you.</p>
+                </div>
+                
+                <div class="recipe-categories">
+                    <button class="category-btn active" data-category="all">All Recipes</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                    <button class="category-btn" data-category="mains">Main Dishes</button>
+                    <button class="category-btn" data-category="sides">Side Dishes</button>
+                </div>
+                
+                <div class="recipes-grid">
+                    <!-- DESSERTS -->
+                    <div class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/choco-cake.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Chocolate Cake</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 60 mins</span>
+                                <span><i class="fas fa-utensils"></i> 8 servings</span>
+                                <span><i class="fas fa-star"></i> Dessert</span>
+                            </div>
+                            <p>A rich, moist chocolate cake that's perfect for any celebration.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>2 cups all-purpose flour</li>
+                                        <li>2 cups sugar</li>
+                                        <li>3/4 cup unsweetened cocoa powder</li>
+                                        <li>1 1/2 teaspoons baking powder</li>
+                                        <li>1 1/2 teaspoons baking soda</li>
+                                        <li>1 teaspoon salt</li>
+                                        <li>2 eggs</li>
+                                        <li>1 cup milk</li>
+                                        <li>1/2 cup vegetable oil</li>
+                                        <li>2 teaspoons vanilla extract</li>
+                                        <li>1 cup boiling water</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>Preheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.</li>
+                                        <li>In a large bowl, combine flour, sugar, cocoa, baking powder, baking soda, and salt.</li>
+                                        <li>Add eggs, milk, oil, and vanilla; beat for 2 minutes.</li>
+                                        <li>Stir in boiling water (batter will be thin).</li>
+                                        <li>Pour into prepared pans and bake for 30-35 minutes.</li>
+                                        <li>Cool completely before frosting.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/vn-cupcakes.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Vanilla Cupcakes</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 40 mins</span>
+                                <span><i class="fas fa-utensils"></i> 12 servings</span>
+                                <span><i class="fas fa-star"></i> Dessert</span>
+                            </div>
+                            <p>Light and fluffy vanilla cupcakes topped with creamy buttercream frosting.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>1 1/2 cups all-purpose flour</li>
+                                        <li>1 1/2 teaspoons baking powder</li>
+                                        <li>1/4 teaspoon salt</li>
+                                        <li>1/2 cup unsalted butter, softened</li>
+                                        <li>1 cup granulated sugar</li>
+                                        <li>2 large eggs</li>
+                                        <li>1 1/2 teaspoons vanilla extract</li>
+                                        <li>1/2 cup milk</li>
+                                        <li>For frosting: 1 cup butter, 3 cups powdered sugar, 2 tsp vanilla, 2 tbsp milk</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>Preheat oven to 350°F (175°C). Line a 12-cup muffin tin with paper liners.</li>
+                                        <li>In a medium bowl, whisk together flour, baking powder, and salt.</li>
+                                        <li>In a large bowl, beat butter and sugar until light and fluffy.</li>
+                                        <li>Beat in eggs one at a time, then stir in vanilla.</li>
+                                        <li>Gradually beat in flour mixture alternating with milk.</li>
+                                        <li>Divide batter among cupcake liners, filling each about 2/3 full.</li>
+                                        <li>Bake for 18-20 minutes or until a toothpick inserted comes out clean.</li>
+                                        <li>Cool completely before frosting with buttercream.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/marble-cake.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Marble Cake</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 70 mins</span>
+                                <span><i class="fas fa-utensils"></i> 10 servings</span>
+                                <span><i class="fas fa-star"></i> Dessert</span>
+                            </div>
+                            <p>A beautiful swirled cake combining vanilla and chocolate batters.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>2 1/4 cups all-purpose flour</li>
+                                        <li>2 1/2 teaspoons baking powder</li>
+                                        <li>1/2 teaspoon salt</li>
+                                        <li>3/4 cup unsalted butter, softened</li>
+                                        <li>1 1/2 cups granulated sugar</li>
+                                        <li>3 large eggs</li>
+                                        <li>1 1/2 teaspoons vanilla extract</li>
+                                        <li>1 cup milk</li>
+                                        <li>1/3 cup unsweetened cocoa powder</li>
+                                        <li>1/4 cup hot water</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>Preheat oven to 350°F (175°C). Grease and flour a 9x5 inch loaf pan.</li>
+                                        <li>In a medium bowl, whisk together flour, baking powder, and salt.</li>
+                                        <li>In a large bowl, cream together butter and sugar until light and fluffy.</li>
+                                        <li>Beat in eggs one at a time, then stir in vanilla.</li>
+                                        <li>Gradually mix in the flour mixture alternating with milk.</li>
+                                        <li>Divide batter in half. Mix cocoa powder and hot water, then stir into one half of the batter.</li>
+                                        <li>Spoon batters alternately into the prepared pan. Swirl with a knife for marble effect.</li>
+                                        <li>Bake for 50-60 minutes until a toothpick inserted comes out clean.</li>
+                                        <li>Cool in pan for 10 minutes, then remove to a wire rack to cool completely.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/tiramisu.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Tiramisu</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 30 mins + 4 hrs chilling</span>
+                                <span><i class="fas fa-utensils"></i> 8 servings</span>
+                                <span><i class="fas fa-star"></i> Dessert</span>
+                            </div>
+                            <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>6 egg yolks</li>
+                                        <li>3/4 cup white sugar</li>
+                                        <li>2/3 cup milk</li>
+                                        <li>1 1/4 cups heavy cream</li>
+                                        <li>1 teaspoon vanilla extract</li>
+                                        <li>1 pound mascarpone cheese</li>
+                                        <li>1/4 cup strong brewed coffee, cooled</li>
+                                        <li>2 tablespoons rum</li>
+                                        <li>24 ladyfinger cookies</li>
+                                        <li>1 tablespoon unsweetened cocoa powder</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>In a medium saucepan, whisk together egg yolks and sugar until well blended.</li>
+                                        <li>Whisk in milk and cook over medium heat, stirring constantly, until mixture boils.</li>
+                                        <li>Boil gently for 1 minute, then remove from heat and allow to cool slightly.</li>
+                                        <li>Cover tightly and chill in refrigerator for 1 hour.</li>
+                                        <li>In a medium bowl, beat cream with vanilla until stiff peaks form.</li>
+                                        <li>Whisk mascarpone into the yolk mixture until smooth.</li>
+                                        <li>Fold in whipped cream. Set aside.</li>
+                                        <li>In a small bowl, combine coffee and rum.</li>
+                                        <li>Split ladyfingers in half lengthwise and drizzle with coffee mixture.</li>
+                                        <li>Arrange half of soaked ladyfingers in bottom of a 7x11 inch dish.</li>
+                                        <li>Spread half of mascarpone mixture over ladyfingers, then repeat layers.</li>
+                                        <li>Sprinkle with cocoa powder. Cover and refrigerate for 4-6 hours, until set.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MAIN DISHES -->
+                    <div class="recipe-card" data-category="mains">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/chicken-curry.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Chicken Curry</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 45 mins</span>
+                                <span><i class="fas fa-utensils"></i> 4 servings</span>
+                                <span><i class="fas fa-star"></i> Main Dish</span>
+                            </div>
+                            <p>A flavorful and aromatic chicken curry that's perfect with rice or naan.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>2 lbs chicken, cut into pieces</li>
+                                        <li>2 onions, finely chopped</li>
+                                        <li>3 cloves garlic, minced</li>
+                                        <li>1 inch ginger, grated</li>
+                                        <li>2 tomatoes, chopped</li>
+                                        <li>2 tbsp vegetable oil</li>
+                                        <li>2 tbsp curry powder</li>
+                                        <li>1 tsp turmeric</li>
+                                        <li>1 tsp cumin</li>
+                                        <li>1 tsp coriander</li>
+                                        <li>1 cup coconut milk</li>
+                                        <li>Salt to taste</li>
+                                        <li>Fresh cilantro for garnish</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>Heat oil in a large pan over medium heat.</li>
+                                        <li>Add onions and sauté until golden brown.</li>
+                                        <li>Add garlic and ginger, cook for 1 minute.</li>
+                                        <li>Add spices and cook for 30 seconds until fragrant.</li>
+                                        <li>Add chicken and cook until browned on all sides.</li>
+                                        <li>Add tomatoes and cook for 5 minutes.</li>
+                                        <li>Pour in coconut milk, bring to a simmer.</li>
+                                        <li>Cover and cook for 20-25 minutes until chicken is tender.</li>
+                                        <li>Garnish with fresh cilantro and serve with rice.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="mains">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/chicken-pasta.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Chicken Pasta</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 35 mins</span>
+                                <span><i class="fas fa-utensils"></i> 4 servings</span>
+                                <span><i class="fas fa-star"></i> Main Dish</span>
+                            </div>
+                            <p>Creamy chicken pasta with garlic, parmesan, and fresh herbs.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>12 oz fettuccine pasta</li>
+                                        <li>1 lb boneless, skinless chicken breasts, sliced</li>
+                                        <li>2 tbsp olive oil</li>
+                                        <li>4 cloves garlic, minced</li>
+                                        <li>1 cup heavy cream</li>
+                                        <li>1 cup chicken broth</li>
+                                        <li>1 cup grated parmesan cheese</li>
+                                        <li>1 tsp Italian seasoning</li>
+                                        <li>1/2 tsp red pepper flakes (optional)</li>
+                                        <li>Salt and pepper to taste</li>
+                                        <li>Fresh parsley, chopped for garnish</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>Cook pasta according to package directions. Drain and set aside.</li>
+                                        <li>Season chicken with salt and pepper.</li>
+                                        <li>Heat olive oil in a large skillet over medium-high heat.</li>
+                                        <li>Add chicken and cook until golden and cooked through, about 6-8 minutes. Remove and set aside.</li>
+                                        <li>In the same skillet, add garlic and cook for 30 seconds until fragrant.</li>
+                                        <li>Add chicken broth, heavy cream, Italian seasoning, and red pepper flakes.</li>
+                                        <li>Bring to a simmer and cook for 5 minutes until slightly thickened.</li>
+                                        <li>Stir in parmesan cheese until melted and smooth.</li>
+                                        <li>Return chicken to the skillet and add cooked pasta. Toss to coat.</li>
+                                        <li>Garnish with fresh parsley and serve immediately.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="mains">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/butter-chicken.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Butter Chicken</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 50 mins</span>
+                                <span><i class="fas fa-utensils"></i> 4 servings</span>
+                                <span><i class="fas fa-star"></i> Main Dish</span>
+                            </div>
+                            <p>Rich and creamy Indian butter chicken with tender chicken pieces in a tomato-based sauce.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>1.5 lbs boneless chicken thighs, cut into pieces</li>
+                                        <li>1/2 cup plain yogurt</li>
+                                        <li>2 tbsp lemon juice</li>
+                                        <li>2 tsp garam masala</li>
+                                        <li>1 tsp ground cumin</li>
+                                        <li>1 tsp ground turmeric</li>
+                                        <li>2 tbsp vegetable oil</li>
+                                        <li>1 large onion, finely chopped</li>
+                                        <li>4 cloves garlic, minced</li>
+                                        <li>1 tbsp ginger, grated</li>
+                                        <li>1 can (14 oz) tomato sauce</li>
+                                        <li>1 cup heavy cream</li>
+                                        <li>2 tbsp butter</li>
+                                        <li>1 tbsp brown sugar</li>
+                                        <li>Salt to taste</li>
+                                        <li>Fresh cilantro for garnish</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>In a bowl, mix yogurt, lemon juice, 1 tsp garam masala, cumin, and turmeric.</li>
+                                        <li>Add chicken pieces and marinate for at least 30 minutes (or overnight).</li>
+                                        <li>Heat oil in a large pan over medium-high heat.</li>
+                                        <li>Add marinated chicken and cook until browned, about 5 minutes. Remove and set aside.</li>
+                                        <li>In the same pan, add onion and cook until soft, about 3 minutes.</li>
+                                        <li>Add garlic and ginger, cook for 1 minute until fragrant.</li>
+                                        <li>Stir in tomato sauce, remaining garam masala, and bring to a simmer.</li>
+                                        <li>Reduce heat to low, cover and simmer for 10 minutes.</li>
+                                        <li>Stir in cream, butter, and brown sugar. Return chicken to the pan.</li>
+                                        <li>Simmer for 10-15 minutes until chicken is cooked through and sauce thickens.</li>
+                                        <li>Season with salt to taste and garnish with fresh cilantro.</li>
+                                        <li>Serve with naan bread or rice.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="mains">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/masala-dosa.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Masala Dosa</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 40 mins + overnight soaking</span>
+                                <span><i class="fas fa-utensils"></i> 4 servings</span>
+                                <span><i class="fas fa-star"></i> Main Dish</span>
+                            </div>
+                            <p>South Indian crispy crepes filled with spiced potato filling.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>For Dosa Batter:</li>
+                                        <li>2 cups rice</li>
+                                        <li>1/2 cup urad dal (split black gram)</li>
+                                        <li>1/4 tsp fenugreek seeds</li>
+                                        <li>Salt to taste</li>
+                                        <li>For Potato Filling:</li>
+                                        <li>4 large potatoes, boiled and mashed</li>
+                                        <li>2 tbsp oil</li>
+                                        <li>1 tsp mustard seeds</li>
+                                        <li>1 tsp cumin seeds</li>
+                                        <li>1 onion, finely chopped</li>
+                                        <li>2 green chilies, chopped</li>
+                                        <li>1 tsp turmeric powder</li>
+                                        <li>1/2 tsp red chili powder</li>
+                                        <li>1 sprig curry leaves</li>
+                                        <li>2 tbsp chopped cilantro</li>
+                                        <li>Salt to taste</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>For Dosa Batter:</li>
+                                        <li>Wash and soak rice, urad dal, and fenugreek seeds separately for 4-6 hours.</li>
+                                        <li>Drain and grind to a smooth batter with water as needed.</li>
+                                        <li>Mix the batters together, add salt, and ferment overnight.</li>
+                                        <li>For Potato Filling:</li>
+                                        <li>Heat oil in a pan. Add mustard seeds and cumin seeds.</li>
+                                        <li>When they splutter, add onions, green chilies, and curry leaves. Sauté until onions are translucent.</li>
+                                        <li>Add turmeric powder, red chili powder, and salt. Mix well.</li>
+                                        <li>Add mashed potatoes and mix thoroughly. Cook for 5 minutes.</li>
+                                        <li>Garnish with cilantro and set aside.</li>
+                                        <li>To Make Dosa:</li>
+                                        <li>Heat a non-stick pan or griddle. Pour a ladleful of batter and spread in a circular motion.</li>
+                                        <li>Drizzle oil around the edges and cook until golden brown.</li>
+                                        <li>Place a portion of potato filling in the center and fold the dosa.</li>
+                                        <li>Serve hot with coconut chutney and sambar.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- SIDE DISHES -->
+                    <div class="recipe-card" data-category="sides">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/garlic-naan.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Garlic Naan</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 30 mins + 2 hrs rising</span>
+                                <span><i class="fas fa-utensils"></i> 8 servings</span>
+                                <span><i class="fas fa-star"></i> Side Dish</span>
+                            </div>
+                            <p>Soft and fluffy Indian flatbread flavored with garlic and butter.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>3 1/2 cups all-purpose flour</li>
+                                        <li>1 tsp salt</li>
+                                        <li>1 tsp baking powder</li>
+                                        <li>1 tsp sugar</li>
+                                        <li>2 tsp active dry yeast</li>
+                                        <li>1 cup warm water</li>
+                                        <li>1/4 cup plain yogurt</li>
+                                        <li>2 tbsp oil</li>
+                                        <li>4 cloves garlic, minced</li>
+                                        <li>2 tbsp melted butter</li>
+                                        <li>2 tbsp chopped fresh cilantro</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>In a small bowl, mix warm water with sugar and yeast. Let sit for 10 minutes until foamy.</li>
+                                        <li>In a large bowl, combine flour, salt, and baking powder.</li>
+                                        <li>Add the yeast mixture, yogurt, and oil to the flour. Mix to form a soft dough.</li>
+                                        <li>Knead the dough on a floured surface for 5-6 minutes until smooth.</li>
+                                        <li>Place in an oiled bowl, cover, and let rise for 2 hours until doubled in size.</li>
+                                        <li>Punch down the dough and divide into 8 equal portions.</li>
+                                        <li>Roll each portion into an oval shape about 1/4 inch thick.</li>
+                                        <li>Heat a cast iron skillet over high heat.</li>
+                                        <li>Place the rolled dough on the hot skillet and cook until bubbles form.</li>
+                                        <li>Flip and cook the other side until golden brown spots appear.</li>
+                                        <li>Brush with garlic butter and sprinkle with cilantro.</li>
+                                        <li>Serve hot with curry or dips.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="sides">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/chapatti.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Chapati</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 30 mins</span>
+                                <span><i class="fas fa-utensils"></i> 8 servings</span>
+                                <span><i class="fas fa-star"></i> Side Dish</span>
+                            </div>
+                            <p>Simple and healthy whole wheat Indian flatbread.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>2 cups whole wheat flour</li>
+                                        <li>1 tsp salt</li>
+                                        <li>1 tbsp oil</li>
+                                        <li>3/4 cup warm water (approximately)</li>
+                                        <li>Extra flour for dusting</li>
+                                        <li>Ghee or butter for brushing (optional)</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>In a large bowl, mix flour and salt.</li>
+                                        <li>Add oil and mix with your fingertips until the mixture resembles breadcrumbs.</li>
+                                        <li>Gradually add warm water and knead to form a soft, pliable dough.</li>
+                                        <li>Cover with a damp cloth and let rest for 15-20 minutes.</li>
+                                        <li>Divide the dough into 8 equal portions and form into balls.</li>
+                                        <li>Roll each ball in dry flour and roll out into a thin circle (about 6-7 inches in diameter).</li>
+                                        <li>Heat a flat pan or tawa over medium-high heat.</li>
+                                        <li>Place the rolled chapati on the hot pan.</li>
+                                        <li>When small bubbles start to appear, flip the chapati.</li>
+                                        <li>Press gently with a cloth or spatula. The chapati should puff up.</li>
+                                        <li>Remove from heat and brush with ghee or butter if desired.</li>
+                                        <li>Serve hot with curry, dal, or vegetable dishes.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="sides">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/roast-potatoe.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Roast Potatoes</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 45 mins</span>
+                                <span><i class="fas fa-utensils"></i> 6 servings</span>
+                                <span><i class="fas fa-star"></i> Side Dish</span>
+                            </div>
+                            <p>Crispy on the outside, fluffy on the inside roasted potatoes.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>2 lbs potatoes (Russet or Yukon Gold)</li>
+                                        <li>3 tbsp olive oil</li>
+                                        <li>1 tsp salt</li>
+                                        <li>1/2 tsp black pepper</li>
+                                        <li>2 cloves garlic, minced</li>
+                                        <li>1 tbsp fresh rosemary, chopped</li>
+                                        <li>1 tbsp fresh thyme, chopped</li>
+                                        <li>1/2 tsp paprika</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>Preheat oven to 425°F (220°C).</li>
+                                        <li>Peel potatoes and cut into 1.5-inch chunks.</li>
+                                        <li>Place potatoes in a large pot and cover with cold water.</li>
+                                        <li>Add 1 tsp salt to the water and bring to a boil.</li>
+                                        <li>Boil for 5-7 minutes until edges are softened but centers are still firm.</li>
+                                        <li>Drain potatoes and let them steam dry for 5 minutes.</li>
+                                        <li>Shake the potatoes in the colander to roughen the edges.</li>
+                                        <li>In a large bowl, mix olive oil, garlic, herbs, salt, pepper, and paprika.</li>
+                                        <li>Add potatoes to the bowl and toss to coat evenly.</li>
+                                        <li>Spread potatoes on a baking sheet in a single layer.</li>
+                                        <li>Roast for 30-35 minutes, turning halfway through, until golden and crispy.</li>
+                                        <li>Serve hot as a side dish.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-category="sides">
+                        <div class="recipe-image">
+                            <div class="image-frame">
+                                <img src="images/papadams.jpg" alt="A photo of Eesar Matharu" class="actual-image">
+                            </div>
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Papadams</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 15 mins</span>
+                                <span><i class="fas fa-utensils"></i> 8 servings</span>
+                                <span><i class="fas fa-star"></i> Side Dish</span>
+                            </div>
+                            <p>Crispy, thin Indian lentil wafers that make a perfect accompaniment to any curry.</p>
+                            <button class="recipe-toggle">View Recipe <i class="fas fa-chevron-down"></i></button>
+                            <div class="recipe-details">
+                                <div class="ingredients">
+                                    <h4>Ingredients</h4>
+                                    <ul>
+                                        <li>8 store-bought papadams</li>
+                                        <li>Oil for deep frying (or cooking spray for microwave method)</li>
+                                        <li>Optional spices for homemade papadams:</li>
+                                        <li>2 cups urad dal flour</li>
+                                        <li>1 tsp cumin seeds</li>
+                                        <li>1 tsp black pepper</li>
+                                        <li>1/2 tsp salt</li>
+                                        <li>1/4 tsp asafoetida (hing)</li>
+                                        <li>2 tbsp oil</li>
+                                        <li>Water as needed</li>
+                                    </ul>
+                                </div>
+                                <div class="instructions">
+                                    <h4>Instructions</h4>
+                                    <ol>
+                                        <li>For Store-Bought Papadams:</li>
+                                        <li>Method 1 - Deep Frying:</li>
+                                        <li>Heat oil in a deep pan to 375°F (190°C).</li>
+                                        <li>Carefully slide one papadam into the hot oil.</li>
+                                        <li>It will immediately puff up and become crisp (about 5 seconds).</li>
+                                        <li>Remove with a slotted spoon and drain on paper towels.</li>
+                                        <li>Repeat with remaining papadams.</li>
+                                        <li>Method 2 - Microwave:</li>
+                                        <li>Lightly spray both sides of papadam with cooking spray.</li>
+                                        <li>Place on a microwave-safe plate.</li>
+                                        <li>Microwave on high for 30-45 seconds until it puffs up and becomes crisp.</li>
+                                        <li>For Homemade Papadams (requires drying time):</li>
+                                        <li>Mix all dry ingredients in a bowl.</li>
+                                        <li>Add oil and mix well.</li>
+                                        <li>Gradually add water to form a stiff dough.</li>
+                                        <li>Divide into small balls and roll into thin circles.</li>
+                                        <li>Dry in the sun for 2-3 days until completely dry.</li>
+                                        <li>Cook using either method above.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="cta-container">
+                    <p>Have a recipe question or want to share your own creation?</p>
+                    <a href="contact-me.html" class="cta-button primary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">EM</div>
+                <p>&copy; 2025 Eesar Matharu. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/hennaxeesar?igsh=bGlqaHNzNTZlZnRq&utm_source=qr" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@hennaxeesar?_t=ZN-8vOqBqZziFy&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/in/eesar-matharu-598b62259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- theme/ recipe toggle functionailities  -->
+    <script>
+        // theme toggle functionality
+        document.querySelector('.theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-moon')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // recipe toggle functionality
+        document.querySelectorAll('.recipe-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const details = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (details.style.maxHeight) {
+                    details.style.maxHeight = null;
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    details.style.maxHeight = details.scrollHeight + 'px';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+
+        // recipe filtering
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // removing active class from all buttons
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // adding active class to clicked button
+                this.classList.add('active');
+                
+                const category = this.getAttribute('data-category');
+                
+                // filetring recipe cards
+                document.querySelectorAll('.recipe-card').forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
